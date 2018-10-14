@@ -6,13 +6,43 @@
     android:layout_height="match_parent"
     tools:context="youngs.step.study.android.scoresupporter.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/matchrecord"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="162dp"
+        android:text="試合を記録する"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="30dp" />
+
+    <Button
+        android:id="@+id/pastdata"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="145dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="106dp"
+        android:text="過去データ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchrecord"
+        tools:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="380dp"
+        android:layout_height="40dp"
+        android:text="Data Analyze Applicationへようこそ！！"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:textSize="20dp" />
 
 </android.support.constraint.ConstraintLayout>

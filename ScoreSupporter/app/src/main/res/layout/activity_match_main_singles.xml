@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchMainSinglesActivity">
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="424dp"
+        android:text="Topに戻る"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="424dp"
+        android:text="スコアの記録"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sc_sin_myplayer"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="27dp"
+        android:background="#00AAFF"
+        android:text="選手名表示"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/set1"
+        app:layout_constraintEnd_toStartOf="@+id/vs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sc_sin_oppplayer"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="27dp"
+        android:background="#00AAFF"
+        android:text="選手名表示"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/game2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vs"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:text="vs"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/sc_sin_oppplayer"
+        app:layout_constraintStart_toEndOf="@+id/sc_sin_myplayer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/set1"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="255dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:background="#00AAFF"
+        android:text="0"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/before"
+        app:layout_constraintEnd_toStartOf="@+id/game1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sc_sin_myplayer" />
+
+    <TextView
+        android:id="@+id/game1"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="270dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:background="#00AAFF"
+        android:text="0"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/before"
+        app:layout_constraintEnd_toStartOf="@+id/-"
+        app:layout_constraintStart_toEndOf="@+id/set1"
+        app:layout_constraintTop_toBottomOf="@+id/sc_sin_myplayer" />
+
+    <TextView
+        android:id="@+id/-"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
+        android:text="  -"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/game2"
+        app:layout_constraintStart_toEndOf="@+id/game1"
+        app:layout_constraintTop_toBottomOf="@+id/vs"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/game2"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="44dp"
+        android:background="#00AAFF"
+        android:text="0"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/set2"
+        app:layout_constraintStart_toEndOf="@+id/-"
+        app:layout_constraintTop_toBottomOf="@+id/sc_sin_oppplayer" />
+
+    <TextView
+        android:id="@+id/set2"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="254dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:background="#00AAFF"
+        android:text="0"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/game2"
+        app:layout_constraintTop_toBottomOf="@+id/sc_sin_oppplayer" />
+
+</android.support.constraint.ConstraintLayout>

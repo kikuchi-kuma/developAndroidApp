@@ -40,7 +40,12 @@
         android:id="@+id/textView"
         android:layout_width="380dp"
         android:layout_height="40dp"
+        android:background="#4cb5f5"
         android:text="Data Analyze Applicationへようこそ！！"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:fontFamily="casual"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"
         tools:textSize="20dp" />
